@@ -6,12 +6,12 @@
 ![Site screenshot](images/about_me_screenshot.png)
 Format: ![Alt Text](url)
 
-###Technologies
+### Technologies
     *HTML
     *CSS
     *Javascript
 
-###Sample Code
+### Sample Code
 ```javascript
 //reff of matrix
 for (let j = 0; j < matrix.length-1; ++j){
@@ -112,3 +112,8 @@ for (let j = 0; j < matrix.length-1; ++j){
 
 ```
 
+### Problems/Future Improvements
+Gears dont display nicely on all screens. Sometimes the program sets one big gear in the middle of the pegs. 
+
+### Author
+##### Brandon Hew
