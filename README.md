@@ -7,9 +7,9 @@
 Format: ![Alt Text](url)
 
 ### Technologies
-*HTML
-*CSS
-*Javascript
+* HTML
+* CSS
+* Javascript
 
 ### Sample Code
 ```javascript
