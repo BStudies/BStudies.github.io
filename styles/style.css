@@ -11,6 +11,28 @@
  
 }
 
+img{
+    border-radius: 20%;
+}
+video{
+    border-radius: 20%;
+}
+
+.educationMedia{
+    align-content: sp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-self: auto;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;  
+}
+
 #me{
     width: 70%;
     position: relative;
@@ -19,7 +41,6 @@
 }
 #lego_auv{
     width: 50%;
-    padding: 40px;
     transform: rotate(90deg);
 }
 #nickRussoAward{
@@ -97,6 +118,10 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+a .contact:hover{
+    text-decoration: none;
 }
 
 

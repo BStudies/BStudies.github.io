@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="google_challange_style.css" rel="stylesheet">
+<!-- <link href="../../style.css" rel="stylesheet"> -->
+
+ <link href="/normalize.css" rel="stylesheet">
+<script src="scripts.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<button id='next_button' onclick="show_next_step()"> next </button> </br></br>
+	<ol>
+		<li style="display: block">
+			I was given an example case of having pegs with distance [4, 30, 50]</br>
+			-4-<button class="peg"></button>-----30-----<button class="peg"></button>----------50---------<button class="peg"></button>
+		</li>
+
+
+
+		<li>
+			I was given the solution as the first gear being radius 12, and the last gear being radius 6 ie: 1/2 of first.</br>
+
+			<button class="gear" id="gear1"> 12 <hr> </button><button class="gear" id="gear2"> 14 <hr> </button><button class="gear" id="gear3"> 6 <hr> </button>
+		</li>
+
+
+
+
+
+		<li>
+			I used 30-4=26 and 50-30=20 to try and find a pattern and inserted the given answer into the equation to find: 26=12+14 and 20=14+6.
+		</li>
+
+
+
+
+
+		<li>
+			noticing the number 14 occured two times, I made that into a constant value coming up with 26=12+d and 20=d+6 or even more general: a = c+d and b = d+e</br>
+
+			<button class="gear" id="gear1"> 12 <hr> </button><button class="gear" id="gear2"> d <hr> </button><button class="gear" id="gear3"> 6 <hr> </button> </br>
+
+		</li>
+
+
+
+
+		<li>
+			Next I set the first and last radii to half of eachother resulting in: a = c+d and b = d+c/2 </br>
+			<button class="gear" id="gear1"> c <hr> </button><button class="gear" id="gear2"> d <hr> </button><button class="gear" id="gear3"> c/2 <hr> </button>
+		</li>
+
+
+
+
+
+
+		<li>
+			This was a system of equations, and we solve those via matrix rref.
+		</li>
+
+
+
+
+
+		<li>
+			The matrix became:
+			<table border="1" align="center">
+				<tr>
+					<th>c</th>
+					<th>d</th>
+					<th>a</th>
+				</tr>
+				<tr>
+					<th>d</th>
+					<th>c/2</th>
+					<th>b</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+				</tr>
+
+			</table>
+
+		</li>
+
+
+
+
+
+		<li>
+			Substituting becomes:
+			<table border="1" align="center">
+				<tr>
+					<th>1</th>
+					<th>1</th>
+					<th>26</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>1/2</th>
+					<th>20</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+				</tr>
+			</table>
+		</li>
+
+
+
+
+
+
+
+		<li>
+			Solving the matrix yeilds:
+			<table border="1" align="center">
+				<tr>
+					<th>1</th>
+					<th>0</th>
+					<th>12</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>1</th>
+					<th>14</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+				</tr>
+			</table>
+			And as we know the last radius is simply 1/2 of the first yeilding 12 and 6
+		</li>
+
+
+
+
+
+
+
+
+		<li>
+			Keep in mind it is not always possible to generate the correct result.
+		</li>
+
+
+
+
+
+
+
+
+		<li>
+			Simplified Matrix:
+			<table border="1" align="center">
+				<tr>
+					<th>1</th>
+					<th>1</th>
+					<th>a</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>1/2</th>
+					<th>b</th>
+				</tr>
+
+			</table>
+		</li>
+
+
+
+
+
+
+
+
+		<li>
+			I proceeded to extrapolate the data with result:
+			<table border="1" align="center">
+				<tr>
+					<th>1</th>
+					<th>1</th>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+					<th>a</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>1</th>
+					<th>1</th>
+					<th>0</th>
+					<th>0</th>
+					<th>b</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>1</th>
+					<th>1</th>
+					<th>0</th>
+					<th>c</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+					<th>1</th>
+					<th>1/2</th>
+					<th>d</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+					<th>0</th>
+				</tr>
+
+			</table>
+
+			for 5 pegs
+		</li>
+
+
+
+
+
+
+		<li>
+			Then I programed the solution in python and finished the problem.
+		</li>
+
+
+
+
+
+
+		<li>
+			In general I have always taken a mathematics approach to solving any sort of problem. It is no wonder I ended up being a Mathematics Major.
+		</li>
+
+
+
+
+	</ol>
+
+
+
+</body>
+
+
+
+
