@@ -120,7 +120,8 @@ a:hover{
     text-decoration: underline;
 }
 
-a .contact:hover{
+
+.contactAnchor{
     text-decoration: none;
 }
 
@@ -130,6 +131,16 @@ button{
 }
 input{
     
+}
+
+
+.appLanding{
+    width: 400px;
+    height: 200px;
+    border-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
 }
 /*@media all and (min-aspect-ratio: 1/2){
     
