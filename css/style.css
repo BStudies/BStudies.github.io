@@ -1,0 +1,325 @@
+html{
+	/* margin: 40px; */
+	
+	/* width: 130vw; */
+	background-color: #8D97A1;
+	color: #FFF6EE;
+}
+
+body{
+    justify-content: flex-start;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+	
+	text-align: center;
+	background-color: #2f2f2f;
+	
+	margin: 100px;
+	
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+    order: auto;
+    font-size: 50px;
+    width: 100%;
+	margin: 50px;
+
+	background-color: #698EA6;
+	height: 200px;
+}
+
+.mydata{
+    justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: nowrap;
+    order: auto;
+
+	width: 70%;
+	
+	margin: 150px 0 150px 0;
+	font-size: 80%;
+}
+
+.heroimg{
+	width: 90%;
+	/* width: 500px; */
+	transform: rotatez(-20deg);
+}
+
+
+.label{
+    transform: rotatez(-90deg);
+	/* width: 320px;
+	height: 150px; */
+}
+
+.aboutme{
+    justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: nowrap;
+    order: auto;
+    width: 100%;
+}
+.aboutmeHeader{
+    justify-content: center;
+    align-items: center;
+    
+    align-content: center;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+    order: auto;
+
+	/*width: 180px;*/
+	
+}
+.aboutmeHeader > h1{
+	width: 50%;
+}
+.aboutmecols{
+	margin: 0 10px 0 10px;
+	width: 70%;
+}
+
+.aboutme > .aboutmecols > article{
+    font-size: 20px;
+    /* background-color: grey; */
+    justify-content: center;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+    order: auto;
+
+	text-align: center;
+
+	margin: 40px;
+	
+}
+
+
+.lego_video{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+
+	margin: 20px;
+	
+	
+}
+
+.lego_info{
+	justify-content: flex-start;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+    order: auto;
+
+	margin: 100px 0 100px 0;
+}
+
+.lego_text{
+	margin: 20px;
+}
+
+.project_container{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+}
+
+.appLanding{
+	width: 90%;
+	/* width: 30vw; */
+	border: 3px solid black; 
+}
+
+
+.project{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+	
+	border: 3px solid white;
+	margin: 40px;
+	width: 90%;
+}
+
+
+.projects{	
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+
+	width: 80%;
+	
+}
+
+.main_project{
+	margin: 90px;
+	border: 3px solid white;
+}
+
+.main_appLanding{
+	width: 90%;
+}
+
+
+.appLink{
+	margin: 5px 0 0 5px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+a:visited{
+	color: white;
+}
+a:hover{
+	color: grey;
+	text-decoration: underline;
+}
+
+
+.lego_head{
+	width: 30%;
+}
+
+.uavAward{
+	width: 80%;
+	height: 80%;
+	margin: 0 0 200px 0;
+}
+
+
+p{
+	font-size: 30px;
+}
+
+.auv_corner{
+	width: 35vw;
+	height: 35vw;
+	transform: rotatez(120deg);
+}
+
+
+
+
+/* long desktop view */
+@media screen and (orientation: portrait) and (min-width: 1024px){
+	html{
+		background-color: red;
+	}
+
+}
+
+
+
+/* regular desktop view */
+@media screen and (orientation: landscape) and (min-width: 1024px){
+	html{
+		background-color: green;
+	}
+
+}
