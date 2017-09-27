@@ -307,19 +307,19 @@ p{
 
 
 /* long desktop view */
-@media screen and (orientation: portrait) and (min-width: 1024px){
+/* @media screen and (orientation: portrait) and (min-width: 1024px){
 	html{
 		background-color: red;
 	}
 
-}
+} */
 
 
 
 /* regular desktop view */
-@media screen and (orientation: landscape) and (min-width: 1024px){
+/* @media screen and (orientation: landscape) and (min-width: 1024px){
 	html{
 		background-color: green;
 	}
 
-}
+} */
