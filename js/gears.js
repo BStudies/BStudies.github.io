@@ -3,7 +3,12 @@ var calcGears = function(pegs, ratio){
 	//remove error message
 
 	// let ratio = .5;
+	if(!pegs || !ratio) return;
 
+
+
+	pegs = pegs.replace(/\s/g, '');
+	ratio = ratio.replace(/\s/g, '');
 	//remove previous gears
 	let gears = document.getElementsByClassName('gear');
 	if(gears.length > 0){
