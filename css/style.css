@@ -209,7 +209,8 @@ nav{
 }
 
 .appLanding{
-	width: 90%;
+	width: 25vw;
+	height: 12vw;
 	/* width: 30vw; */
 	border: 3px solid black; 
 }
@@ -251,7 +252,7 @@ nav{
 	flex-wrap: auto;
 	order: auto;
 
-	width: 80%;
+	width: 90%;
 	
 }
 
@@ -261,7 +262,7 @@ nav{
 }
 
 .main_appLanding{
-	width: 90%;
+	width: 50%;
 }
 
 
