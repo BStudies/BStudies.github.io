@@ -79,7 +79,9 @@ nav{
 
 
 .label{
-    transform: rotatez(-90deg);
+	/* transform: rotatez(-90deg); */
+	transform: rotatez(30deg);
+	margin: 0 0 0 5vw;
 	/* width: 320px;
 	height: 150px; */
 }
@@ -224,7 +226,7 @@ nav{
 	align-self: auto;
 	display: flex;
 	flex-basis: auto;
-	flex-direction: row;
+	flex-direction: column;
 	flex-flow: auto;
 	flex-grow: auto;
 	flex-shrink: auto;
