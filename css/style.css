@@ -100,7 +100,9 @@ nav{
 	flex-shrink: auto;
 	flex-wrap: nowrap;
     order: auto;
-    width: 100%;
+	width: 100%;
+	
+	margin: 10vw;
 }
 .aboutmeHeader{
     justify-content: center;
