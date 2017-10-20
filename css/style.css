@@ -314,9 +314,8 @@ p{
 }
 
 
-ul{
-	list-style-position: inside;
-}
+
+
 
 /* long desktop view */
 /* @media screen and (orientation: portrait) and (min-width: 1024px){
