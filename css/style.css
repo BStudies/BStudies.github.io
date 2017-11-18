@@ -22,15 +22,13 @@ body{
 	flex-wrap: auto;
 	order: auto;
 	
-	text-align: center;
-	background-color: #2f2f2f;
-	
-	margin: 100px;
-	
+	text-align: center;	
 }
 
 nav{
-    justify-content: space-around;
+
+	display: none;
+    /* justify-content: space-around;
     align-items: center;
     
     align-content: auto;
@@ -48,8 +46,36 @@ nav{
 	margin: 50px;
 
 	background-color: #698EA6;
-	height: 200px;
+	height: 200px; */
 }
+.innerContainer{
+	height:0;
+	width: 0;
+	overflow-x:visible;
+	overflow-y:visible;
+  }
+  .outerContainer{
+	height: 20vw;
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+    order: auto;
+	margin: 50px 0 0 0;
+	background-color: #698EA6;
+	position: absolute;
+	/* top: 150px; */
+	left: 55vw;
+	z-index: 1;
+  }
 
 .mydata{
     justify-content: space-around;
@@ -66,14 +92,17 @@ nav{
 	flex-wrap: nowrap;
     order: auto;
 
-	width: 70%;
+	width: 100%;
+	height: 40vh;
 	
 	margin: 150px 0 150px 0;
 	font-size: 80%;
+
+	background-color: #2f2f2f;
 }
 
 .heroimg{
-	width: 90%;
+	width: 70%;
 	/* width: 500px; */
 	transform: rotatez(-20deg);
 }
@@ -211,6 +240,10 @@ nav{
 	flex-shrink: auto;
 	flex-wrap: auto;
 	order: auto;
+
+	background-color: #2f2f2f;
+	margin: 30vh 0 30vh 0;
+	width: 100vw;
 }
 
 .appLanding{
@@ -234,13 +267,16 @@ nav{
 	flex-shrink: auto;
 	flex-wrap: auto;
 	order: auto;
-	
+/* 	
 	border: 3px solid white;
-	margin: 1vw;
-	width: 27vw;
-	height: 48vw;
+	margin: 1vw; */
+	width: 50vw;
+	height: 100vh;
 }
-
+.project > img{
+	width: 300px;
+	height: 150px;
+}
 
 .projects{	
 	justify-content: space-around;
@@ -257,16 +293,19 @@ nav{
 	flex-wrap: auto;
 	order: auto;
 
-	width: 10vw;
+	width: 100vw;
 	height: 50vw;
 
 	font-size: 1.8vw;
+
+	margin: 30vh 0 30vh 0;
+
 	
 }
 
 .main_project{
 	margin: 5vw;
-	border: 3px solid white;
+	/* border: 3px solid white; */
 	font-size: 1.8vw;	
 }
 
@@ -297,9 +336,8 @@ a:hover{
 }
 
 .uavAward{
-	width: 80%;
-	height: 80%;
-	margin: 0 0 200px 0;
+	width: 60%;
+	height: 60%;
 }
 
 
@@ -310,9 +348,89 @@ p{
 .auv_corner{
 	width: 35vw;
 	height: 35vw;
-	transform: rotatez(120deg);
+	transform: rotatez(90deg);
+
+
+	animation-duration: 5s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	/* animation-direction: alternate; */
+  
 }
 
+
+.menu{
+	font-size: 3em;
+	margin: 0 0 30px 0;
+	color: black;
+}
+
+
+.whoamI{
+	background-color: #2f2f2f;
+	margin: 40vh 0 40vh 0;
+	width: 100vw;
+}
+
+
+
+footer{
+	/* height: 30vh; */
+	width: 100vw;
+	margin: 10vh 0 0 0;
+	background-color: black;
+}
+
+
+.whoamI > img{
+	width: 512px;
+	background-color: #B2AE92;
+}
+
+
+.rightImageHardwareContainer{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row-reverse;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+	
+	text-align: center;	
+
+	background-color: #2f2f2f;
+	width: 100vw;
+	margin: 20vh 0 20vh 0;
+}
+
+.leftImageHardwareContainer{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+	
+	text-align: center;	
+
+	background-color: #2f2f2f;
+	width: 100vw;
+	margin: 20vh 0 20vh 0;
+}
 
 
 
@@ -328,9 +446,98 @@ p{
 
 
 /* regular desktop view */
-/* @media screen and (orientation: landscape) and (min-width: 1024px){
-	html{
+/* @media screen and (orientation: landscape) and (min-width: 768px){ */
+@media screen and (orientation: landscape){	
+	/* html{
 		background-color: green;
+	} */
+
+	.menu > i{
+		display: none;
 	}
 
-} */
+	.outerContainer{
+		
+		background-color: black;
+		position: relative;
+		/* top: 150px; */
+		left: 0px;
+		width: 100vw;
+		height: 20vh;
+		margin: 0px;
+		background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,.2));
+	  }
+
+	nav{
+		justify-content: space-around;
+		align-items: center;
+		
+		align-content: auto;
+		align-self: auto;
+		display: flex;
+		flex-basis: auto;
+		flex-direction: row;
+		flex-flow: auto;
+		flex-grow: auto;
+		flex-shrink: auto;
+		flex-wrap: auto;
+		order: auto;
+		font-size: 50px;
+		width: 100%;
+		margin: 50px;
+	
+		/* background-color: black; */
+		/* background-color: linear-gradient(to top, black, red); */
+		height: 200px;
+	}
+
+	.heroimg{
+		width: 450px;
+		/* width: 500px; */
+		transform: rotatez(-20deg);
+	}
+
+	.mydata{
+		justify-content: space-around;
+		align-items: center;
+		
+		align-content: auto;
+		align-self: auto;
+		display: flex;
+		flex-basis: auto;
+		flex-direction: row;
+		flex-flow: auto;
+		flex-grow: auto;
+		flex-shrink: auto;
+		flex-wrap: nowrap;
+		order: auto;
+	
+		width: 100vw;
+		height: 60vh;
+		
+		margin: 0 0 40vh 0;
+		font-size: 80%;
+	
+		background-color: #2f2f2f;
+	}
+
+	.project > img{
+		width: 500px;
+		height: 200px;
+	}
+}
+
+
+
+
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0
+	}
+}

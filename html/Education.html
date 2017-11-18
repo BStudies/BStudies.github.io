@@ -4,59 +4,72 @@
     <head>
             <link rel="stylesheet" href="../css/style.css">
             <link rel="stylesheet" href="../css/reset.css">
+            <script src="https://use.fontawesome.com/1b6e4a1c49.js"></script>
+            <script src='../js/jquery.min.js'></script>
+            <script src='../js/main.js'></script>
     </head>
 
 
     <body>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="./Education.html">Education</a> 
-            <a href="./Work.html">Work</a> 
-        </nav>
-
-        <img class="auv_corner"src="../images/auv_corner.JPG" alt="">
-        <div class="aboutme">
-                <div class="aboutmecols">
-                    <div class="aboutmeHeader">
-                        <h1>Full Stack Devloper</h1>
-                    </div>
-                    
-                    <article>
-                        <p>I started out as a Mathematician and I was pretty good at that, however I disliked solving the same problems over and over so I turned to CS. </p>
-                    </article>
-                </div>
-    
-                <div class="aboutmecols">
-                    <div class="aboutmeHeader">
-                        <h1>Table Tennis Enthusiast</h1>
-                    </div>
-                    <article>
-                        <p>Now I use my advanced Mathematics theory in parallel with CS to create complex applications.</p>
-                    </article>
-                </div>
-                
-            </div>
-        <div class="lego_info">
-            <div class="lego_video">
-                <img class="lego_head" src="../images/lego_person_head.png" alt="">
-                <video class="vid" width="280" controls alt='Video of robot in action' >
-                    <source src="../images/nxtRun.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="lego_text">
-                <p>My Completion run of the Autonomus Underwater Vehicle I designed.
-                    with accompanying award.
-                </p>
-            </div>
+        <div class="menu">
+            <i class="fa fa-bars"  aria-hidden="true"></i>
         </div>
+        <div class='outerContainer'>
+            <!-- <div class='innerContainer'> -->
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./Education.html">Hardware</a> 
+                <a href="./Work.html">Software</a> 
+            </nav>
+            <!-- </div>   -->
+        </div>
+
+
+        <main>
+            <div class='rightImageHardwareContainer'>
+                <img class="auv_corner"src="../images/auv_corner.JPG" alt="">
+                <div class='hardware description'>
+                    <ul>
+                        <li><h2>My Autonomous Underwater Vehicle design</h2></li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+    
+            <div class='leftImageHardwareContainer'>
+                <div class="lego_video">
+                    <img class="lego_head" src="../images/lego_person_head.png" alt="">
+                    <video class="vid" width="280" controls alt='Video of robot in action' >
+                        <source src="../images/nxtRun.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class='hardware description'>
+                    <ul>
+                        <li><h2>Completion run of the Autonomus Underwater Vehicle
+                            with accompanying award.</h2></li>
+                    </ul>
+                    <img class="uavAward" src="../images/UAV Award.jpg" alt="">
+                </div>
+            </div>
+            
+            
+            
+        </main>
         
-        
-        <img class="uavAward" src="../images/UAV Award.jpg" alt="">
   
     </body>
 
 
-
+    <footer>
+        <h1>Copyright 2017</h1>
+        <h2>Science is my passion</h2> 
+        <h2>Computers are my tool</h2> 
+        <h2>Gradual development of complexity is my process.</h2>
+        <div class='icons'>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+    </footer>
 
 </html>
 
