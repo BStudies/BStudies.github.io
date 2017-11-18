@@ -100,7 +100,9 @@ $(window).on('load',function(){
     let timer = 1;
     let $auv = $('.auv_corner')
     function cycleAUVImages(){
-        if(!$auv) return;
+        if(!$auv) {
+            return;
+        }
         let interval = setInterval(function(){
             console.log(`IMG_037${timer}`)
             $auv[0].src = `../images/IMG_037${timer}.jpg`

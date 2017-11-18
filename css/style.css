@@ -271,7 +271,7 @@ nav{
 	border: 3px solid white;
 	margin: 1vw; */
 	width: 50vw;
-	height: 100vh;
+	height: 40vh;
 }
 .project > img{
 	width: 300px;
@@ -524,6 +524,27 @@ footer{
 	.project > img{
 		width: 500px;
 		height: 200px;
+	}
+
+	.project{
+		justify-content: space-around;
+		align-items: center;
+		
+		align-content: auto;
+		align-self: auto;
+		display: flex;
+		flex-basis: auto;
+		flex-direction: column;
+		flex-flow: auto;
+		flex-grow: auto;
+		flex-shrink: auto;
+		flex-wrap: auto;
+		order: auto;
+	/* 	
+		border: 3px solid white;
+		margin: 1vw; */
+		width: 45vw;
+		height: 100vh;
 	}
 }
 
