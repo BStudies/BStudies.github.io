@@ -433,6 +433,21 @@ footer{
 }
 
 
+.icons > i{
+	font-size: 5em;
+}
+
+.icons > i:hover{
+	color: grey;
+}
+
+
+.whoamI > img:hover{
+	animation-duration: 1.5s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+}
+
 
 
 /* long desktop view */
@@ -560,5 +575,11 @@ footer{
 	}
 	100%{
 		opacity: 0
+	}
+}
+
+@keyframes pulse{
+	100%{
+		width: 50%;
 	}
 }
