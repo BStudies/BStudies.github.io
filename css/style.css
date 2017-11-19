@@ -450,6 +450,27 @@ footer{
 
 
 
+.bhlogo{
+	justify-content: space-around;
+    align-items: center;
+    
+    align-content: auto;
+	align-self: flex-start;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+	order: auto;
+	
+	text-align: center;	
+
+}
+
+
+
 /* long desktop view */
 /* @media screen and (orientation: portrait) and (min-width: 1024px){
 	html{
